@@ -4,10 +4,8 @@ import {ApplicationOverviewComponent} from "./components/ApplicationOverviewComp
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <ApplicationOverviewComponent/>
-            </header>
+        <div className="container">
+            <ApplicationOverviewComponent/>
         </div>
     );
 }

@@ -20,16 +20,17 @@ export const parseData = (): Application[] => {
         return data.map((it: any) => {
             const details: any = it.application.applicationCore
             const application: Application = {
-                firstDay: moment(details.firstDay).toDate(),
-                lastDay: moment(details.lastDay).toDate(),
+                firstDay: moment(details.firstDay),
+                lastDay: moment(details.lastDay),
                 workingDays: details.workdays,
                 withdrawn: details.withdrawn,
                 leaveType: leaveType(details.leaveType),
                 id: details.id
             }
             return application
-        })
+        });
+    } else {
+        return []
     }
-    return []
 
 }

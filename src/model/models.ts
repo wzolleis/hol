@@ -1,6 +1,8 @@
+import {Moment} from "moment";
+
 export interface Application {
-    firstDay: Date
-    lastDay: Date
+    firstDay: Moment
+    lastDay: Moment
     workingDays: number
     withdrawn: boolean
     leaveType: LeaveType,

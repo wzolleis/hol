@@ -19,9 +19,11 @@ export const ApplicationOverviewComponent = () => {
 
     return (
         <div>
-            {
-                data.map(it => <ApplicationComponent key={it.id} application={it}/>)
-            }
+            <ul className="list-group">
+                {
+                    data.map(it => <ApplicationComponent key={it.id} application={it}/>)
+                }
+            </ul>
         </div>
     )
 }
