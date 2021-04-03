@@ -11,7 +11,12 @@ export const ApplicationComponent = (props: ApplicationComponentProps) => {
     const {application} = props
     return (
         <li className="list-group-item">
-            {formatMoment(application.firstDay)} - {formatMoment(application.lastDay)} ({application.workingDays})
+            <div className="card">
+                <div className="card-body">
+                    {formatMoment(application.firstDay)} - {formatMoment(application.lastDay)} ({application.workingDays})
+                    <button className='btn btn-primary'>test</button>
+                </div>
+            </div>
         </li>
     )
 }
