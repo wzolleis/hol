@@ -1,7 +1,9 @@
-import {Application, LeaveType} from "../model/models";
-import data from '../data/urlaub.json'
+import {Application, LeaveType} from "../../app/model/models";
+//import data from '../../data/urlaub.json'
 import moment from "moment"
 
+// todo - daten bereitstellen
+const data = ''
 
 function isArray(data: any): data is Array<any> {
     return (data as Array<any>).length !== undefined;

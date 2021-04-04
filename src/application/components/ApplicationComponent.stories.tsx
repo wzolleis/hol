@@ -1,7 +1,7 @@
 import React from 'react';
 import {Meta, Story} from '@storybook/react';
 import {ApplicationComponent, ApplicationComponentProps} from "./ApplicationComponent";
-import data from '../testdata/testdata'
+import data from '../../testdata/testdata'
 
 export default {
     title: 'application/vacation',

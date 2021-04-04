@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Application} from "../model/models";
+import {Application} from "../../app/model/models";
 import {parseData} from "../actions/applicationActions";
 import {ApplicationComponent} from "./ApplicationComponent";
 

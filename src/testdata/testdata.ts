@@ -1,4 +1,4 @@
-import {Application, LeaveType} from "../model/models";
+import {Application, LeaveType} from "../app/model/models";
 import moment from 'moment'
 import Chance from 'chance';
 

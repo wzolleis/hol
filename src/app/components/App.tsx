@@ -1,5 +1,5 @@
 import React from 'react';
-import {ApplicationOverviewComponent} from "./components/ApplicationOverviewComponent";
+import {ApplicationOverviewComponent} from "../../application/components/ApplicationOverviewComponent";
 
 function App() {
     return (
