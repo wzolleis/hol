@@ -3,10 +3,10 @@ import {Application, LeaveType} from "../../app/model/models";
 import moment from "moment"
 
 // todo - daten bereitstellen
-const data = ''
+const data: string[] = []
 
 function isArray(data: any): data is Array<any> {
-    return (data as Array<any>).length !== undefined;
+    return typeof ((data as Array<any>).map) === 'function';
 }
 
 const leaveType = (leaveType: string): LeaveType => {
