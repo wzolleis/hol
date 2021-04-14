@@ -8,8 +8,8 @@ const chance = new Chance()
 const baseApplication: Application = {
     firstDay: moment(),
     lastDay: moment().add(10, "days"),
-    workingDays: 7,
-    leaveType: LeaveType.URLAUB,
+    workdays: 7,
+    leaveType: LeaveType.VACATION,
     withdrawn: false,
     id: ''
 }
@@ -26,7 +26,7 @@ const data: Testdata = {
     },
     compensatory: {
         ...baseApplication,
-        leaveType: LeaveType.GLEITZEIT,
+        leaveType: LeaveType.COMPENSATORY,
         id: chance.string()
     }
 }
