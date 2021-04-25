@@ -1,5 +1,5 @@
 import React from "react";
-import {Application, LeaveType} from "../../app/model/models";
+import {Application} from "../../app/model/models";
 import {formatMoment} from "../../utils/dateUtils";
 import BootstrapTable from "react-bootstrap-table-next";
 import ToolkitProvider, {Search} from 'react-bootstrap-table2-toolkit';
